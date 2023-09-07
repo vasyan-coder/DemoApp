@@ -9,12 +9,14 @@ junit = "4.13.2"
 androidx-test-ext-junit = "1.1.5"
 espresso-core = "3.5.1"
 appcompat = "1.6.1"
+lifecycle-viewmodel-ktx = "2.6.2"
 material = "1.9.0"
 constraintlayout = "2.1.4"
 moshi-kotlin = "1.14.0"
 okhttp = "4.11.0"
 
 [libraries]
+androidx-lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycle-viewmodel-ktx" }
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
 dagger-compiler = { module = "com.google.dagger:dagger-compiler", version.ref = "dagger-compiler" }
 dagger = { module = "com.google.dagger:dagger", version.ref = "dagger" }
