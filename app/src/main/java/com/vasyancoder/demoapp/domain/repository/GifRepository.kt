@@ -1,8 +1,8 @@
 package com.vasyancoder.demoapp.domain.repository
 
-import com.vasyancoder.demoapp.domain.entity.Gif
+import com.vasyancoder.demoapp.domain.entity.Gifs
 
 interface GifRepository {
 
-    suspend fun getTrendGifListUseCase(): List<Gif>
+    suspend fun getTrendGifListUseCase(): Gifs
 }

@@ -1,6 +1,6 @@
 package com.vasyancoder.demoapp.domain.entity
 
 
-data class Gif(
+data class Gifs(
     val dataGif: List<DataGif>
 )
