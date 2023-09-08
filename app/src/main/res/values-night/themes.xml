@@ -4,6 +4,7 @@
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
         <item name="backgroundColor">@color/background_dark</item>
+        <item name="android:statusBarColor">@color/background_dark</item>
     </style>
 
     <style name="Base.Theme.DemoApp" parent="Base.V24.Night.Theme.DemoApp" />
