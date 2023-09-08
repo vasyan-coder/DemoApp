@@ -11,7 +11,7 @@ class GifMapper {
             DataGif(
                 id = dataGifDto.id,
                 title = dataGifDto.title,
-                url = dataGifDto.url,
+                url = dataGifDto.images.originalSize.url,
                 username = dataGifDto.username
             )
         }

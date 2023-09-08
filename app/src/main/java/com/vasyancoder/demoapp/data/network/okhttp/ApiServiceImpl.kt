@@ -18,8 +18,8 @@ class ApiServiceImpl : ApiService {
         val response = call.execute()
 
         if (response.isSuccessful) {
-            val responseBodyString = response.body!!.string()
-            return ApiFactory.jsonAdapter.fromJson(responseBodyString)
+            val responseBodySource = response.body!!.source()
+            return ApiFactory.jsonAdapter.fromJson(responseBodySource)
                 ?: throw JsonEncodingException("Error reading json into ${GifsDto::class.simpleName}")
         }
         throw ConnectionException("The request failed. Response code: ${response.code}")

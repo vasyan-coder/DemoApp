@@ -2,6 +2,7 @@ package com.vasyancoder.demoapp.data.network.okhttp
 
 import com.squareup.moshi.JsonAdapter
 import com.squareup.moshi.Moshi
+import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import com.vasyancoder.demoapp.BuildConfig
 import com.vasyancoder.demoapp.data.network.dto.GifsDto
 import okhttp3.OkHttpClient
@@ -14,6 +15,8 @@ object ApiFactory {
 
     val okHttpClient = OkHttpClient()
 
-    private val moshi: Moshi = Moshi.Builder().build()
+    private val moshi: Moshi = Moshi.Builder()
+        .addLast(KotlinJsonAdapterFactory())
+        .build()
     val jsonAdapter: JsonAdapter<GifsDto> = moshi.adapter(GifsDto::class.java)
 }

@@ -7,8 +7,8 @@ data class DataGifDto(
     val id: String,
     @Json(name = "title")
     val title: String,
-    @Json(name = "url")
-    val url: String,
     @Json(name = "username")
-    val username: String
+    val username: String,
+    @Json(name = "images")
+    val images: ImagesDto
 )

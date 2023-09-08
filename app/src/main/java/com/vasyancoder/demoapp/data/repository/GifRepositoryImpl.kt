@@ -14,7 +14,7 @@ class GifRepositoryImpl : GifRepository {
     override suspend fun getTrendGifListUseCase(): Resource<Gifs> = try {
         Resource.Success<Gifs>(mapper.mapDtoToEntity(api.getTrendGifList()))
     } catch (e: Exception) {
-        Resource.Error(e.message ?: "An unknown error occurred")
+        Resource.Error(e.message ?: "An repository unknown error occurred")
     }
 
 }
