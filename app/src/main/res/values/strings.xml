@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">DemoApp</string>
+    <string name="reload_page">Reload Page</string>
+    <string name="refresh">Refresh</string>
 </resources>
